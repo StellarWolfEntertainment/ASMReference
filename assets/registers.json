@@ -1,0 +1,622 @@
+{
+    "x64": {
+        "name": "Microsoft x64",
+        "description": "Microsoft x64 calling convention",
+        "registers": {
+            "integer_parameters": [
+                {
+                    "low8": "al",
+                    "high8": "ah",
+                    "bit16": "ax",
+                    "bit32": "eax",
+                    "bit64": "rax"
+                },
+                {
+                    "low8": "cl",
+                    "high8": "ch",
+                    "bit16": "cx",
+                    "bit32": "ecx",
+                    "bit64": "rcx"
+                },
+                {
+                    "low8": "dl",
+                    "high8": "dh",
+                    "bit16": "dx",
+                    "bit32": "edx",
+                    "bit64": "rdx"
+                },
+                {
+                    "low8": "r8b",
+                    "high8": null,
+                    "bit16": "r8w",
+                    "bit32": "r8d",
+                    "bit64": "r8"
+                },
+                {
+                    "low8": "r9b",
+                    "high8": null,
+                    "bit16": "r9w",
+                    "bit32": "r9d",
+                    "bit64": "r9"
+                }
+            ],
+            "floating_parameters": [
+                {
+                    "bit128": "xmm0",
+                    "bit256": "ymm0",
+                    "bit512": "zmm0"
+                },
+                {
+                    "bit128": "xmm0",
+                    "bit256": "ymm0",
+                    "bit512": "zmm0"
+                },
+                {
+                    "bit128": "xmm1",
+                    "bit256": "ymm1",
+                    "bit512": "zmm1"
+                },
+                {
+                    "bit128": "xmm2",
+                    "bit256": "ymm2",
+                    "bit512": "zmm2"
+                },
+                {
+                    "bit128": "xmm3",
+                    "bit256": "ymm3",
+                    "bit512": "zmm3"
+                }
+            ],
+            "all_integer_registers": [
+                {
+                    "volatile": true,
+                    "low8": "al",
+                    "high8": "ah",
+                    "bit16": "ax",
+                    "bit32": "eax",
+                    "bit64": "rax"
+                },
+                {
+                    "volatile": true,
+                    "low8": "cl",
+                    "high8": "ch",
+                    "bit16": "cx",
+                    "bit32": "ecx",
+                    "bit64": "rcx"
+                },
+                {
+                    "volatile": true,
+                    "low8": "dl",
+                    "high8": "dh",
+                    "bit16": "dx",
+                    "bit32": "edx",
+                    "bit64": "rdx"
+                },
+                {
+                    "volatile": false,
+                    "low8": "bl",
+                    "high8": "bh",
+                    "bit16": "bx",
+                    "bit32": "ebx",
+                    "bit64": "rbx"
+                },
+                {
+                    "volatile": false,
+                    "low8": "sil",
+                    "high8": null,
+                    "bit16": "si",
+                    "bit32": "esi",
+                    "bit64": "rsi"
+                },
+                {
+                    "volatile": false,
+                    "low8": "dil",
+                    "high8": null,
+                    "bit16": "di",
+                    "bit32": "edi",
+                    "bit64": "rdi"
+                },
+                {
+                    "volatile": false,
+                    "low8": "bpl",
+                    "high8": null,
+                    "bit16": "bp",
+                    "bit32": "ebp",
+                    "bit64": "rbp"
+                },
+                {
+                    "volatile": false,
+                    "low8": "spl",
+                    "high8": null,
+                    "bit16": "sp",
+                    "bit32": "esp",
+                    "bit64": "rsp"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r8b",
+                    "high8": null,
+                    "bit16": "r8w",
+                    "bit32": "r8d",
+                    "bit64": "r8"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r9b",
+                    "high8": null,
+                    "bit16": "r9w",
+                    "bit32": "r9d",
+                    "bit64": "r9"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r10b",
+                    "high8": null,
+                    "bit16": "r10w",
+                    "bit32": "r10d",
+                    "bit64": "r10"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r11b",
+                    "high8": null,
+                    "bit16": "r11w",
+                    "bit32": "r11d",
+                    "bit64": "r11"
+                },
+                {
+                    "volatile": false,
+                    "low8": "r12b",
+                    "high8": null,
+                    "bit16": "r12w",
+                    "bit32": "r12d",
+                    "bit64": "r12"
+                },
+                {
+                    "volatile": false,
+                    "low8": "r13b",
+                    "high8": null,
+                    "bit16": "r13w",
+                    "bit32": "r13d",
+                    "bit64": "r13"
+                },
+                {
+                    "volatile": false,
+                    "low8": "r14b",
+                    "high8": null,
+                    "bit16": "r14w",
+                    "bit32": "r14d",
+                    "bit64": "r14"
+                },
+                {
+                    "volatile": false,
+                    "low8": "r15b",
+                    "high8": null,
+                    "bit16": "r15w",
+                    "bit32": "r15d",
+                    "bit64": "r15"
+                }
+            ],
+            "all_floating_registers": [
+                {
+                    "volatile": true,
+                    "bit128": "xmm0",
+                    "bit256": "ymm0",
+                    "bit512": "zmm0"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm1",
+                    "bit256": "ymm1",
+                    "bit512": "zmm1"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm2",
+                    "bit256": "ymm2",
+                    "bit512": "zmm2"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm3",
+                    "bit256": "ymm3",
+                    "bit512": "zmm3"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm4",
+                    "bit256": "ymm4",
+                    "bit512": "zmm4"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm5",
+                    "bit256": "ymm5",
+                    "bit512": "zmm5"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm6",
+                    "bit256": "ymm6",
+                    "bit512": "zmm6"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm7",
+                    "bit256": "ymm7",
+                    "bit512": "zmm7"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm8",
+                    "bit256": "ymm8",
+                    "bit512": "zmm8"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm9",
+                    "bit256": "ymm9",
+                    "bit512": "zmm9"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm10",
+                    "bit256": "ymm10",
+                    "bit512": "zmm10"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm11",
+                    "bit256": "ymm11",
+                    "bit512": "zmm11"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm12",
+                    "bit256": "ymm12",
+                    "bit512": "zmm12"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm13",
+                    "bit256": "ymm13",
+                    "bit512": "zmm13"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm14",
+                    "bit256": "ymm14",
+                    "bit512": "zmm14"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm15",
+                    "bit256": "ymm15",
+                    "bit512": "zmm15"
+                }
+            ]
+        }
+    },
+    "sys-v": {
+        "name": "System V x64",
+        "description": "System V x64 calling convention",
+        "registers": {
+            "integer_parameters": [
+                {
+                    "low8": "al",
+                    "high8": "ah",
+                    "bit16": "ax",
+                    "bit32": "eax",
+                    "bit64": "rax"
+                },
+                {
+                    "low8": "di",
+                    "high8": null,
+                    "bit16": "di",
+                    "bit32": "edi",
+                    "bit64": "rdi"
+                },
+                {
+                    "low8": "si",
+                    "high8": null,
+                    "bit16": "si",
+                    "bit32": "esi",
+                    "bit64": "rsi"
+                },
+                {
+                    "low8": "dx",
+                    "high8": "dh",
+                    "bit16": "dx",
+                    "bit32": "edx",
+                    "bit64": "rdx"
+                },
+                {
+                    "low8": "cx",
+                    "high8": "ch",
+                    "bit16": "cx",
+                    "bit32": "ecx",
+                    "bit64": "rcx"
+                },
+                {
+                    "low8": "r8b",
+                    "high8": null,
+                    "bit16": "r8w",
+                    "bit32": "r8d",
+                    "bit64": "r8"
+                },
+                {
+                    "low8": "r9b",
+                    "high8": null,
+                    "bit16": "r9w",
+                    "bit32": "r9d",
+                    "bit64": "r9"
+                }
+            ],
+            "floating_parameters": [
+                {
+                    "bit128": "xmm0",
+                    "bit256": "ymm0",
+                    "bit512": "zmm0"
+                },
+                {
+                    "bit128": "xmm0",
+                    "bit256": "ymm0",
+                    "bit512": "zmm0"
+                },
+                {
+                    "bit128": "xmm1",
+                    "bit256": "ymm1",
+                    "bit512": "zmm1"
+                },
+                {
+                    "bit128": "xmm2",
+                    "bit256": "ymm2",
+                    "bit512": "zmm2"
+                },
+                {
+                    "bit128": "xmm3",
+                    "bit256": "ymm3",
+                    "bit512": "zmm3"
+                },
+                {
+                    "bit128": "xmm4",
+                    "bit256": "ymm4",
+                    "bit512": "zmm4"
+                },
+                {
+                    "bit128": "xmm5",
+                    "bit256": "ymm5",
+                    "bit512": "zmm5"
+                }
+            ],
+            "all_integer_registers": [
+                {
+                    "volatile": true,
+                    "low8": "al",
+                    "high8": "ah",
+                    "bit16": "ax",
+                    "bit32": "eax",
+                    "bit64": "rax"
+                },
+                {
+                    "volatile": true,
+                    "low8": "cx",
+                    "high8": "ch",
+                    "bit16": "cx",
+                    "bit32": "ecx",
+                    "bit64": "rcx"
+                },
+                {
+                    "volatile": true,
+                    "low8": "dx",
+                    "high8": "dh",
+                    "bit16": "dx",
+                    "bit32": "edx",
+                    "bit64": "rdx"
+                },
+                {
+                    "volatile": true,
+                    "low8": "si",
+                    "high8": null,
+                    "bit16": "si",
+                    "bit32": "esi",
+                    "bit64": "rsi"
+                },
+                {
+                    "volatile": true,
+                    "low8": "di",
+                    "high8": null,
+                    "bit16": "di",
+                    "bit32": "edi",
+                    "bit64": "rdi"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r8b",
+                    "high8": null,
+                    "bit16": "r8w",
+                    "bit32": "r8d",
+                    "bit64": "r8"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r9b",
+                    "high8": null,
+                    "bit16": "r9w",
+                    "bit32": "r9d",
+                    "bit64": "r9"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r10b",
+                    "high8": null,
+                    "bit16": "r10w",
+                    "bit32": "r10d",
+                    "bit64": "r10"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r11b",
+                    "high8": null,
+                    "bit16": "r11w",
+                    "bit32": "r11d",
+                    "bit64": "r11"
+                },
+                {
+                    "volatile": false,
+                    "low8": "bl",
+                    "high8": "bh",
+                    "bit16": "bx",
+                    "bit32": "ebx",
+                    "bit64": "rbx"
+                },
+                {
+                    "volatile": false,
+                    "low8": "bp",
+                    "high8": null,
+                    "bit16": "bp",
+                    "bit32": "ebp",
+                    "bit64": "rbp"
+                },
+                {
+                    "volatile": false,
+                    "low8": "sp",
+                    "high8": null,
+                    "bit16": "sp",
+                    "bit32": "esp",
+                    "bit64": "rsp"
+                },
+                {
+                    "volatile": false,
+                    "low8": "r12b",
+                    "high8": null,
+                    "bit16": "r12w",
+                    "bit32": "r12d",
+                    "bit64": "r12"
+                },
+                {
+                    "volatile": false,
+                    "low8": "r13b",
+                    "high8": null,
+                    "bit16": "r13w",
+                    "bit32": "r13d",
+                    "bit64": "r13"
+                },
+                {
+                    "volatile": false,
+                    "low8": "r14b",
+                    "high8": null,
+                    "bit16": "r14w",
+                    "bit32": "r14d",
+                    "bit64": "r14"
+                },
+                {
+                    "volatile": false,
+                    "low8": "r15b",
+                    "high8": null,
+                    "bit16": "r15w",
+                    "bit32": "r15d",
+                    "bit64": "r15"
+                }
+            ],
+            "all_floating_registers": [
+                {
+                    "volatile": true,
+                    "bit128": "xmm0",
+                    "bit256": "ymm0",
+                    "bit512": "zmm0"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm1",
+                    "bit256": "ymm1",
+                    "bit512": "zmm1"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm2",
+                    "bit256": "ymm2",
+                    "bit512": "zmm2"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm3",
+                    "bit256": "ymm3",
+                    "bit512": "zmm3"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm4",
+                    "bit256": "ymm4",
+                    "bit512": "zmm4"
+                },
+                {
+                    "volatile": true,
+                    "bit128": "xmm5",
+                    "bit256": "ymm5",
+                    "bit512": "zmm5"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm6",
+                    "bit256": "ymm6",
+                    "bit512": "zmm6"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm7",
+                    "bit256": "ymm7",
+                    "bit512": "zmm7"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm8",
+                    "bit256": "ymm8",
+                    "bit512": "zmm8"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm9",
+                    "bit256": "ymm9",
+                    "bit512": "zmm9"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm10",
+                    "bit256": "ymm10",
+                    "bit512": "zmm10"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm11",
+                    "bit256": "ymm11",
+                    "bit512": "zmm11"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm12",
+                    "bit256": "ymm12",
+                    "bit512": "zmm12"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm13",
+                    "bit256": "ymm13",
+                    "bit512": "zmm13"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm14",
+                    "bit256": "ymm14",
+                    "bit512": "zmm14"
+                },
+                {
+                    "volatile": false,
+                    "bit128": "xmm15",
+                    "bit256": "ymm15",
+                    "bit512": "zmm15"
+                }
+            ]
+        }
+    }
+}

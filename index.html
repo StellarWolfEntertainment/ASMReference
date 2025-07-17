@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Visual comparison of calling convention register usage between Microsoft x64 and System V x64." />
+    <meta name="author" content="Stellar Wolf Entertainment" />
+    <title>Calling Convention Registers</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav class="sidebar-nav" aria-label="Calling Convention Navigation">
+        <div class="sidebar-nav__mode-toggle" role="group" aria-label="Select Calling Convention">
+            <input type="radio" id="microsoft-x64" name="calling-convention" value="x64" checked>
+            <label for="microsoft-x64">Microsoft x64</label>
+
+            <input type="radio" id="sys-v" name="calling-convention" value="sys-v">
+            <label for="sys-v">System V x64</label>
+        </div>
+
+        <ul class="sidebar-nav__links">
+            <li><a href="#integer-parameters">Integer Parameter Registers</a></li>
+            <li><a href="#floating-parameters">Floating Point Parameter Registers</a></li>
+            <li><a href="#all-integer-registers">Total Integer Registers</a></li>
+            <li><a href="#all-floating-registers">Total Floating Point Registers</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Calling Convention Registers</h1>
+
+        <section id="integer-parameters" aria-labelledby="heading-integer-parameters">
+            <h2 id="heading-integer-parameters">Integer Parameter Registers</h2>
+            <table id="integer-parameters-table">
+                <caption>Registers used to pass integer parameters.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Role</th>
+                        <th scope="col">Low 8-bit</th>
+                        <th scope="col">High 8-bit</th>
+                        <th scope="col">16-bit</th>
+                        <th scope="col">32-bit</th>
+                        <th scope="col">64-bit</th>
+                    </tr>
+                </thead>
+                <tbody id="integer-parameters-body"></tbody>
+            </table>
+        </section>
+
+        <section id="floating-parameters" aria-labelledby="heading-floating-parameters">
+            <h2 id="heading-floating-parameters">Floating Point Parameter Registers</h2>
+            <table id="floating-parameters-table">
+                <caption>Registers used to pass floating point values.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Role</th>
+                        <th scope="col">128-bit</th>
+                        <th scope="col">256-bit</th>
+                        <th scope="col">512-bit</th>
+                    </tr>
+                </thead>
+                <tbody id="floating-parameters-body"></tbody>
+            </table>
+        </section>
+
+        <section id="all-integer-registers" aria-labelledby="heading-all-integer-registers">
+            <h2 id="heading-all-integer-registers">Total Integer Registers</h2>
+            <table id="all-integer-registers-table">
+                <caption>All available integer registers, grouped by volatility.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Volatility</th>
+                        <th scope="col">Low 8-bit</th>
+                        <th scope="col">High 8-bit</th>
+                        <th scope="col">16-bit</th>
+                        <th scope="col">32-bit</th>
+                        <th scope="col">64-bit</th>
+                    </tr>
+                </thead>
+                <tbody id="all-integer-registers-body"></tbody>
+            </table>
+        </section>
+
+        <section id="all-floating-registers" aria-labelledby="heading-all-floating-registers">
+            <h2 id="heading-all-floating-registers">Total Floating Point Registers</h2>
+            <table id="all-floating-registers-table">
+                <caption>All available floating point registers, grouped by volatility.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Volatility</th>
+                        <th scope="col">128-bit</th>
+                        <th scope="col">256-bit</th>
+                        <th scope="col">512-bit</th>
+                    </tr>
+                </thead>
+                <tbody id="all-floating-registers-body"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/registers.js"></script>
+</body>
+
+</html>
