@@ -93,6 +93,38 @@
                     "bit64": "rdx"
                 },
                 {
+                    "volatile": true,
+                    "low8": "r8b",
+                    "high8": null,
+                    "bit16": "r8w",
+                    "bit32": "r8d",
+                    "bit64": "r8"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r9b",
+                    "high8": null,
+                    "bit16": "r9w",
+                    "bit32": "r9d",
+                    "bit64": "r9"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r10b",
+                    "high8": null,
+                    "bit16": "r10w",
+                    "bit32": "r10d",
+                    "bit64": "r10"
+                },
+                {
+                    "volatile": true,
+                    "low8": "r11b",
+                    "high8": null,
+                    "bit16": "r11w",
+                    "bit32": "r11d",
+                    "bit64": "r11"
+                },
+                {
                     "volatile": false,
                     "low8": "bl",
                     "high8": "bh",
@@ -131,38 +163,6 @@
                     "bit16": "sp",
                     "bit32": "esp",
                     "bit64": "rsp"
-                },
-                {
-                    "volatile": true,
-                    "low8": "r8b",
-                    "high8": null,
-                    "bit16": "r8w",
-                    "bit32": "r8d",
-                    "bit64": "r8"
-                },
-                {
-                    "volatile": true,
-                    "low8": "r9b",
-                    "high8": null,
-                    "bit16": "r9w",
-                    "bit32": "r9d",
-                    "bit64": "r9"
-                },
-                {
-                    "volatile": true,
-                    "low8": "r10b",
-                    "high8": null,
-                    "bit16": "r10w",
-                    "bit32": "r10d",
-                    "bit64": "r10"
-                },
-                {
-                    "volatile": true,
-                    "low8": "r11b",
-                    "high8": null,
-                    "bit16": "r11w",
-                    "bit32": "r11d",
-                    "bit64": "r11"
                 },
                 {
                     "volatile": false,
