@@ -310,28 +310,28 @@
                     "bit64": "rax"
                 },
                 {
-                    "low8": "di",
+                    "low8": "dil",
                     "high8": null,
                     "bit16": "di",
                     "bit32": "edi",
                     "bit64": "rdi"
                 },
                 {
-                    "low8": "si",
+                    "low8": "sil",
                     "high8": null,
                     "bit16": "si",
                     "bit32": "esi",
                     "bit64": "rsi"
                 },
                 {
-                    "low8": "dx",
+                    "low8": "dl",
                     "high8": "dh",
                     "bit16": "dx",
                     "bit32": "edx",
                     "bit64": "rdx"
                 },
                 {
-                    "low8": "cx",
+                    "low8": "cl",
                     "high8": "ch",
                     "bit16": "cx",
                     "bit32": "ecx",
@@ -408,7 +408,7 @@
                 },
                 {
                     "volatile": true,
-                    "low8": "dx",
+                    "low8": "dl",
                     "high8": "dh",
                     "bit16": "dx",
                     "bit32": "edx",
@@ -416,7 +416,7 @@
                 },
                 {
                     "volatile": true,
-                    "low8": "si",
+                    "low8": "sil",
                     "high8": null,
                     "bit16": "si",
                     "bit32": "esi",
@@ -424,7 +424,7 @@
                 },
                 {
                     "volatile": true,
-                    "low8": "di",
+                    "low8": "dil",
                     "high8": null,
                     "bit16": "di",
                     "bit32": "edi",
@@ -472,7 +472,7 @@
                 },
                 {
                     "volatile": false,
-                    "low8": "bp",
+                    "low8": "bpl",
                     "high8": null,
                     "bit16": "bp",
                     "bit32": "ebp",
@@ -480,7 +480,7 @@
                 },
                 {
                     "volatile": false,
-                    "low8": "sp",
+                    "low8": "spl",
                     "high8": null,
                     "bit16": "sp",
                     "bit32": "esp",
