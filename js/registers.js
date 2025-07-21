@@ -108,6 +108,34 @@ function onCallingConventionChange(event) {
     updateTablesForConvention(selectedValue);
 }
 
+function initBackToTop() {
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    // Show/hide button based on scroll position
+    function toggleBackToTopVisibility() {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    }
+    
+    // Smooth scroll to top
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    
+    // Event listeners
+    window.addEventListener('scroll', toggleBackToTopVisibility);
+    backToTopButton.addEventListener('click', scrollToTop);
+    
+    // Initial check
+    toggleBackToTopVisibility();
+}
+
 
 window.addEventListener("DOMContentLoaded", async () => {
     await loadData();
@@ -122,4 +150,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     if (defaultRadio) {
         updateTablesForConvention(defaultRadio.value);
     }
+    
+    // Initialize back to top functionality
+    initBackToTop();
 });

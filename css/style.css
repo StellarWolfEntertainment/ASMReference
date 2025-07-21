@@ -102,6 +102,8 @@ body {
 .content {
     margin-left: var(--sidebar-width);
     padding: 2rem;
+    padding-bottom: 6rem;
+    /* Extra space at bottom to prevent back-to-top button overlap */
 }
 
 .content h1 {
@@ -153,4 +155,41 @@ body {
 
 .content tbody .align-center {
     text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-nav-bg);
+    color: var(--color-nav-text);
+    border: 2px solid var(--color-nav-border);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+    background-color: var(--color-nav-hover);
+    transform: translateY(15px) scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:active {
+    transform: translateY(0) scale(0.95);
 }
