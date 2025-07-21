@@ -1,42 +1,45 @@
 :root {
-    --color-bg: #0b1a0b;
+    --sidebar-width: 300px;
+    --color-bg: #0b0b0b;
     --color-text: #66ff66;
-    --color-nav-bg: #122012;
+    --color-nav-bg: #121212;
     --color-nav-text: #99ff99;
-    --color-nav-hover: #264926;
+    --color-nav-hover: #262626;
+    --color-nav-hover-radio: #264926;
     --color-nav-unchecked: #1b331b;
     --color-nav-border: #3a663a;
     --color-heading-primary: #7fff7f;
     --color-heading-secondary: #4caf50;
     --color-border: #336633;
     --color-table-border: #264926;
-    --color-thead-bg: #1b331b;
-    --color-row-hover: #2f512f;
-    --color-table-bg: #0b1a0b;
+    --color-thead-bg: #1b1b1b;
+    --color-row-hover: #2f2f2f;
+    --color-table-bg: #0b0b0b;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --color-bg: #f4fff4;
+        --color-bg: #f4f4f4;
         --color-text: #004d00;
-        --color-nav-bg: #d9f2d9;
+        --color-nav-bg: #d9d9d9;
         --color-nav-text: #004d00;
-        --color-nav-hover: #a3d8a3;
+        --color-nav-hover: #a3a3a3;
+        --color-nav-hover-radio: #a3d8a3;
         --color-nav-unchecked: #cce6cc;
         --color-nav-border: #70b370;
         --color-heading-primary: #2e7d32;
         --color-heading-secondary: #1b5e20;
         --color-border: #70b370;
         --color-table-border: #a3d8a3;
-        --color-thead-bg: #e6f4e6;
-        --color-row-hover: #d0e8d0;
-        --color-table-bg: #f4fff4;
+        --color-thead-bg: #e6e6e6;
+        --color-row-hover: #d0d0d0;
+        --color-table-bg: #f4f4f4;
     }
 }
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     background-color: var(--color-bg);
     color: var(--color-text);
 }
@@ -44,7 +47,7 @@ body {
 .sidebar-nav {
     background-color: var(--color-nav-bg);
     color: var(--color-nav-text);
-    width: 275px;
+    width: var(--sidebar-width);
     position: fixed;
     height: 100vh;
     overflow-y: auto;
@@ -88,7 +91,7 @@ body {
 
 .sidebar-nav__mode-toggle label:hover,
 .sidebar-nav__mode-toggle label:focus {
-    background-color: var(--color-nav-hover);
+    background-color: var(--color-nav-hover-radio);
 }
 
 .sidebar-nav__mode-toggle input[type="radio"]:checked+label {
@@ -97,7 +100,7 @@ body {
 }
 
 .content {
-    margin-left: 270px;
+    margin-left: var(--sidebar-width);
     padding: 2rem;
 }
 
